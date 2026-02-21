@@ -48,7 +48,7 @@ class PolymarketCopyBot:
         host = "https://clob.polymarket.com"
         chain_id = 137
         try:
-            self.client = ClobClient(host, key=self.api_key, chain_id=chain_id, funder=self.funder)
+           self.client = ClobClient(host, key=None, chain_id=chain_id, funder=self.funder)
             self.client.set_api_creds({
                 "api_key": self.api_key,
                 "api_secret": self.api_secret,
